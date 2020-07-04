@@ -1,0 +1,57 @@
+<div class="chart_component__container" *ngIf="showChart">
+    <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+  <mat-panel-title>
+      <p>График Уклона</p>
+  </mat-panel-title>
+  
+  </mat-expansion-panel-header> -->
+<div class="hear_of_chart__container" >
+  <h4 class="header_of_chart__h4">График Уклона</h4>
+
+  <img  class="resize_icon__img" src="./assets/expand.png"> 
+</div>
+
+<div class="chart_diagram__svg">
+  <ngx-charts-line-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxis]="xAxis"
+  [yAxis]="yAxis"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [timeline]="timeline"
+  [results]="multi"
+  >
+</ngx-charts-line-chart>
+</div>  
+
+
+<div class="list_of__checkbox">
+    <div class="chart__checkbox"> <input type="checkbox" id="show_damage__checkbox"  name="damage"
+        checked>
+ <label for="damage">Отобразить повреждения</label>
+    </div>
+    <div class="chart__checkbox"> <input type="checkbox" id="show_damage__checkbox"  name="damage"
+        checked>
+      <label for="damage">Показать Сетку</label></div>
+    <div class="chart__checkbox">
+        <input type="checkbox" id="show_damage__checkbox"  name="damage">
+<label for="damage">Показать значения</label>
+    </div>
+   
+
+ 
+  </div>
+
+  <div class="share_chart_icon__container">
+    <img class="share_chart_icon__img" src="./assets/share.png">
+  </div>
+
+
+<!-- </div> -->
+<!-- </mat-expansion-panel> -->
+</div>

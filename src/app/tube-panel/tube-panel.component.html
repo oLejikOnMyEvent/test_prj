@@ -1,0 +1,31 @@
+<div class="tube-panel__container" *ngIf = "panelData">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false" [ngClass]="checkStyle(panelData.wordTitle)">
+  <mat-expansion-panel-header>
+  <mat-panel-title [ngClass]="checkStyleHeaderPanel(panelData.wordTitle)">
+      <span class="text-header__span">  <span style="font-size: 16px;
+        line-height: 19px; margin-right: 2px; font-style: bold;">{{panelData.wordTitle}}</span> {{panelData.textTitle}}</span>
+      <span class="subTitle-text-header__span">   {{panelData.subWordTitle}} {{panelData.subTextTitle}}</span>
+  </mat-panel-title>
+
+  </mat-expansion-panel-header>
+  <hr>
+  <div style="display: flex;">
+    <img class="timer_pic__img" src="./assets/Oval.png">
+    <p class="data_time__p"> {{panelData.timer}} Ч </p>
+  </div>
+  
+  <hr>
+    <p>
+        {{panelData.descriptText}}
+    </p>
+<hr>    
+<div style="display: flex; justify-content: center;">
+    <button class="tube-panel_mediafile__button">
+        Медиафайлы
+    </button>
+</div>
+
+
+</mat-expansion-panel>
+</div>

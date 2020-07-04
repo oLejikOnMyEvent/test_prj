@@ -1,0 +1,56 @@
+.list_of__checkbox{
+  margin-top: 20px;
+}
+
+.chart__checkbox{
+    margin: 10px;
+   
+}
+.chart_component__container{
+  
+  background-color: white;
+  width: 804px;
+  height: 210px;
+  box-shadow: 0px -2px 4px rgba(132, 132, 132, 0.2);
+border-radius: 8px 8px 0px 0px;
+position: fixed;
+bottom: 0;
+}
+
+.hear_of_chart__container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_of_chart__h4{
+  margin-left: 30px;
+  font-family: ProximaNova;
+font-size: 13px;
+letter-spacing: -0.0577446px;
+text-transform: uppercase;
+color: #4A4A4A;
+}
+
+.resize_icon__img{
+  margin-right: 10px;
+}
+
+
+.resize_icon__img:hover{
+  opacity: 0.8;
+}
+.share_chart_icon__container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.share_chart_icon__img{
+  justify-self: end;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.share_chart_icon__img:hover{
+  opacity: 0.8;
+}

@@ -1,0 +1,47 @@
+<mat-drawer-container class="tube-legend__container">
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <div class="descript_of_bar__container">
+        
+          <img src="./assets/navigate.png"> 
+            <p class="report__p">  ОТЧЕТ ОТ {{reportData}}</p>
+            <!-- <p class="image_of_report__img">  image </p> -->
+          
+              <img class="ulkon_png__img" src="./assets/uklon.png" (click)="openChart(!showChart)">
+        
+           
+        </div>
+
+        <div style="margin-top: 30px;">
+          <div class="start_dot_pic__container">
+            <img src="./assets/dot_pic.png">
+            <span class="text-of-start_dot-pic__span"> колодец_1 </span>
+          </div>
+        
+          <div *ngFor="let item of tubeDdata; let last = last" class="tube-panel__container" >
+            <div class="vertical_line__span" [ngClass]="{'last-child': last}"> </div>
+            
+                <div [ngClass]="checkStyle(item.wordTitle)">
+                 <p class="value_of__p">{{item.value}}</p> 
+                </div>
+                <app-tube-panel [panelData]="item"></app-tube-panel>
+        </div>
+        <div class="end_dot_pic__container">
+          <img src="./assets/dot_pic.png">
+          <span class="text-of-end_dot-pic__span"> колодец_1 </span>
+        </div>
+        </div>
+         
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button (click)="drawer.toggle()" (click)="showChart = false" class="toggle_side_panel__button">
+        <img src="./assets/Path.png">
+      </button>
+
+      <div class="app-chart__container">
+        <app-chart [showChart]="showChart"></app-chart>
+      </div>
+     
+    </div>
+
+  </mat-drawer-container>

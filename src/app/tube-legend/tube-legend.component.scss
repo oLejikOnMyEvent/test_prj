@@ -1,0 +1,135 @@
+$color :  #009EE3;
+$font-family: ProximaNova;
+$color-vertical-line: #C51E25;
+$color-pandel: #69AEE6;
+$color-panel2: #FDCBCB;
+
+
+.tube-legend__container{
+   height: 99vh;
+}
+
+
+// .example-sidenav-content{
+//     
+// }
+
+
+.toggle_side_panel__button{
+    background: #FFFFFF;
+border-radius: 0px 8px 8px 0px;
+width: 22px;
+height: 37px;
+border: none;
+outline: none;
+margin-top: 19px;
+color: #626262;
+cursor: pointer;
+}
+
+.example-sidenav{
+    width: 316px;
+}
+
+.descript_of_bar__container{
+    margin-top: 30px;
+    margin-left: 23px;
+    height: 17px;
+    display: flex;
+    justify-content: flex-start;
+}
+.report__p{
+    color: $color;
+    font-family: $font-family;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.0577446px;
+    text-transform: uppercase;
+    height: 16px;
+}
+
+.tube-panel__container{
+    margin-left: 30px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 65px 1fr;
+    grid-template-rows: auto;
+    margin-top: 10px;
+}
+
+.horizontal_line__span{
+    width: 150px;
+    height: 4px;
+    background: $color-pandel;
+    align-self: center;
+}
+
+.horizontal_line__span2{
+    width: 150px;
+    height: 4px;
+    background: $color-panel2;
+    align-self: center;
+}
+
+.ulkon_png__img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 29px;
+}
+
+.ulkon_png__img:hover{
+    opacity: 0.7;
+}
+
+.toggle_side_panel__button:hover{
+    opacity: 0.7;
+}
+
+.vertical_line__span{
+    width: 4px;
+    background: $color-vertical-line;
+    height: 120%
+}
+
+.last-child{
+    width: 4px;
+    background: $color-vertical-line;
+    height: 105%;
+}
+
+.value_of__p{
+    margin-left: 25px;
+}
+
+.app-chart__container{
+    
+}
+
+.start_dot_pic__container{
+    margin-left: 20px;
+   display: flex;
+}
+
+.end_dot_pic__container{
+    margin-left: 20px;
+    display: flex;
+}
+
+.text-of-start_dot-pic__span{
+    color: #C51E25;
+    font-size: 13px;
+line-height: 15px;
+text-transform: uppercase;
+margin-top: 4px
+}
+
+.text-of-end_dot-pic__span{
+    color: #C51E25;
+    font-size: 13px;
+line-height: 15px;
+text-transform: uppercase;
+margin-top: 4px
+}
