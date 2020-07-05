@@ -97,16 +97,13 @@ cursor: pointer;
 .last-child{
     width: 4px;
     background: $color-vertical-line;
-    height: 105%;
+    height: 100%;
 }
 
 .value_of__p{
     margin-left: 25px;
 }
 
-.app-chart__container{
-    
-}
 
 .start_dot_pic__container{
     margin-left: 20px;
@@ -132,4 +129,12 @@ margin-top: 4px
 line-height: 15px;
 text-transform: uppercase;
 margin-top: 4px
+}
+
+.vertical_line_first__span{
+    width: 4px;
+    background: $color-vertical-line;
+    height: 25px;
+    margin-left: 30px;
+    margin-bottom: -20px;
 }
